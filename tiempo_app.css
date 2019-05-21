@@ -1,0 +1,166 @@
+*{
+    font-family: 'Walter Turncoat', cursive;
+    
+}
+
+.ui-btn{
+    width: 40%;
+}
+
+.ui-filter-inset {
+    margin-top: 0;
+}
+
+li{
+    cursor: pointer;
+}
+
+/* Para la página iniciar*/
+.ini_todo{
+    width: 90%;
+    justify-content:space-between;
+    margin-left: 30px;
+    display: flex;
+    position: relative; 
+}
+
+.ini_img img{
+    position: relative;
+    width:425px;
+}
+
+.ini_img{
+    position: relative;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.ini_sub{
+    margin-left: 15px;
+}
+
+.botones_ini{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    border-radius: 2px;
+}
+
+
+/*Para la página de almacenamiento de ciudades*/
+#ciudades{
+    background-color: rgb(29, 185, 196);
+    
+}
+
+#mis_cius{
+    justify-content:center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ciu{
+    width: 600px;
+    height: 12em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: black;
+}
+
+.ciu_todo{
+    color: white;
+    background-color:rgb(36, 36, 36);
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    width: 80%;
+    height: 80%;
+    position: relative;
+    box-shadow: 0px 10px 10px -3px rgba(0,0,0,0.75);
+    border-radius: 2px;
+}
+
+.ciu_img{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ciu_info{
+    align-items: baseline;
+    width: 300px;
+    height: 100px;
+    margin-left: 20px;
+    padding-left: 20px;
+    
+}
+
+.eliminar{
+    margin-top: 20px;
+    height: 20px;
+    width: 15px;
+    border-radius: 40px;
+}
+
+.ciu_img img{
+    position: relative;
+    object-fit: contain;
+    width: 90%;
+    height: 90%;
+    padding: 0;
+  }
+
+.botones_ciu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    border-radius: 2px;
+    margin: 20px;
+}
+
+/* Para la página de añadir*/
+.botones_mas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    border-radius: 2px;
+}
+
+@media (max-width: 500px){
+    
+    .ini_todo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+        width: 400px;
+    }
+
+
+
+    .ini_img img{
+        width:250px;
+    }
+
+    .ciu_todo{
+        width: 70%;
+    }
+    
+    .botones_ini{justify-content:flex-end;}
+    .botones_ciu{justify-content:space-between;}
+    .botones_mas{justify-content:flex-start;}
+
+    .ui-btn{
+        width: 16px;
+        border-radius: 35px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
