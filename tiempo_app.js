@@ -136,7 +136,6 @@ $(document).on("mobileinit", function(){
 
             let recortar= nombre.split(' ');
             nombre = recortar[7];
-            alert(recortar);
             memoria= $.grep(memoria, function(value){
                 return value != nombre;
                 
